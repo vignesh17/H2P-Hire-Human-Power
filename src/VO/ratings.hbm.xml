@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="VO">
+    <class name="ratingsVO" table="RATINGS">
+        
+        <id name="rating_id" type="int">
+            <column name="RATING_ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="event_id" type="int">
+            <column name="EVENT_ID" />
+        </property>
+        
+        <property name="manager_id" type="int">
+            <column name="MANAGER_ID" />
+        </property>
+        
+        <property name="employee_id" type="int">
+            <column name="EMPLOYEE_ID" />
+        </property>
+         
+         <property name="rating" type="float">
+            <column name="RATING" />
+        </property>         
+        <property name="comment" type="java.lang.String">
+            <column name="COMMENT" />
+        </property>
+            </class>
+</hibernate-mapping>

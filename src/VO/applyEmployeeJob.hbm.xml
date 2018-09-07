@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="VO">
+    <class name="applyEmployeeJobVO" table="JOBAPPLICATION">
+        
+        <id name="jobapplication_id" type="int">
+            <column name="JOB_APPLICATION_ID" />
+            <generator class="increment" />
+        </id>
+         <property name="event_id" type="int">
+            <column name="EVENT_ID" />
+        </property>
+         <property name="user_id" type="int">
+            <column name="USER_ID" />
+        </property>
+            </class>
+</hibernate-mapping>
